@@ -1,0 +1,12 @@
+{
+  "dataStudio": {
+    "name": "SPARQL Connector",
+    "logoUrl": "https://www.w3.org/RDF/icons/rdf_w3c_icon.48.gif",
+    "company": "DataFabric LLC.",
+    "companyUrl": "http://datafabric.cc",
+    "addonUrl": "https://github.com/DataFabricRus/datastudio-sparql-connector",
+    "supportUrl": "https://github.com/DataFabricRus/datastudio-sparql-connector/issues",
+    "description": "Load data with a SPARQL SELECT query",
+    "feeType": ["FREE"]
+  }
+}

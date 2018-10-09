@@ -1,6 +1,8 @@
 # SPARQL Connector for Google Data Studio
 
-It allows to load data from a SPARQL endpoint using the SELECT queries.
+It allows to load data from a SPARQL endpoint using SELECT queries.
+
+![Connector in the gallery](screenshot_ingallery.png)
 
 ## Getting started
 

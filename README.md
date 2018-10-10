@@ -7,7 +7,7 @@ It allows to load data from a SPARQL endpoint using SELECT queries.
 ## Getting started
 
 1. Open the [link](https://datastudio.google.com/datasources/create?connectorId=AKfycbzDHEBN9qHXPni4xO4P2cIZtyQ3rnYmzkCnVsnh9oEJrnhGe4MntBF-t1zAu2Lm-Vjc) to create a new Data Source.
-1. Once authorization has successfully completed, you're ready to configure the parameters. You should be see the form:
+1. Once authorization has successfully completed, you're ready to configure the parameters. You should see the form:
 
     ![Screenshot of the configuration page](screenshot_parameters.png)
 
@@ -36,7 +36,7 @@ It allows to load data from a SPARQL endpoint using SELECT queries.
     * `dateRange.endDate` - format `YYYY-MM-DD`, e.g. 2018-10-01,
     * `dateRange.numDays` - it's a positive integer value.
 
-    If you don't use `dateRange.startDate` and `dateRange.endDate`, then you won't be able to use **Date range** filter.
+    If you don't use `dateRange.startDate` or `dateRange.endDate`, then **Date range** filter won't be able to control the date range.
 
 1. Enter the schema of projections, e.g.
 
@@ -59,6 +59,18 @@ Google Data Studio uses it's own formats for some of the data types. Therefore t
 * `xsd:date` is converted to `YYYYMMDD`,
 * `xsd:dateTime` is converted to `YYYYMMDDHH`,
 * `xsd:duration` is converted to an integer corresponding to the number of seconds.
+
+## Default values
+
+The connector may apply default values in query results which don't a value for a requested field. The default values:
+
+Datatype   | Default value
+-----------|--------------
+`NUMBER`   | `0`
+`BOOLEAN`  | `false`
+`STRING`   | `""`
+
+If you don't like these defaults, then write your query in a way when it can't have missing/empty values, especially in case of `GROUP BY`.
 
 ## License
 

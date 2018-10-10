@@ -20,6 +20,8 @@ function reformatByDatatype(value, xsdDatatype) {
 function getDefaultValue(schema) {
   if(schema.dataType == "NUMBER") {
     return 0;
+  } else if(schema.dataType == "BOOLEAN") {
+    return false;
   } else {
     return "";
   }

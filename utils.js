@@ -1,4 +1,4 @@
-function reformatByDatatypes(value, xsdDatatype) {
+function reformatByDatatype(value, xsdDatatype) {
   if(xsdDatatype) {
     if(xsdDatatype == "http://www.w3.org/2001/XMLSchema#date") {
       return value.replace(/Z|-/gi, "");
@@ -16,6 +16,14 @@ function reformatByDatatypes(value, xsdDatatype) {
   
   return value;
 };
+
+function getDefaultValue(schema) {
+  if(schema.dataType == "NUMBER") {
+    return 0;
+  } else {
+    return "";
+  }
+}
 
 function durationToSecs(value) {
   var match = value.match(/PT(\d{1,2}H)*(\d{1,2}M)*([\d{1,2}\.]+S)*/i);

@@ -102,9 +102,11 @@ function execute(endpoint, query, options) {
       options.fields.forEach(function(rf) {
         var cell = row[rf.name];
         
-        cell.value = reformatByDatatypes(cell.value, cell.datatype);
-        
-        values.push(cell.value);
+        if(cell) {
+          values.push(reformatByDatatype(cell.value, cell.datatype));
+        } else {
+          values.push(getDefaultValue(cachedSchemaFields[rf.name]));
+        }
       });
       
       return { values: values };

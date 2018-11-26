@@ -4,6 +4,12 @@ It allows to load data from a SPARQL endpoint using SELECT queries.
 
 ![Connector in the gallery](screenshot_ingallery.png)
 
+## Example report
+
+![Example report on Google Datastudio](screenshot_examplereport.png)
+
+Here is [link](https://datastudio.google.com/open/1Mbwa4VUue5Z9Ke4TsN6FcsQMiQX2uDPC) to the example report.
+
 ## Getting started
 
 1. Open the [link](https://datastudio.google.com/datasources/create?connectorId=AKfycbzDHEBN9qHXPni4xO4P2cIZtyQ3rnYmzkCnVsnh9oEJrnhGe4MntBF-t1zAu2Lm-Vjc) to create a new Data Source.

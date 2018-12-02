@@ -1,12 +1,13 @@
 {
   "dataStudio": {
-    "name": "SPARQL Connector",
+    "name": "SPARQL Connector (DEV)",
+    "description": "Load data with a SPARQL SELECT query",
     "logoUrl": "https://www.w3.org/RDF/icons/rdf_w3c_icon.48.gif",
     "company": "DataFabric LLC.",
     "companyUrl": "http://datafabric.cc",
     "addonUrl": "https://github.com/DataFabricRus/datastudio-sparql-connector",
     "supportUrl": "https://github.com/DataFabricRus/datastudio-sparql-connector/issues",
-    "description": "Load data with a SPARQL SELECT query",
+    "authType": ["NONE"],
     "feeType": ["FREE"]
   }
 }
